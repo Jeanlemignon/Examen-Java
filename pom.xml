@@ -15,13 +15,27 @@
         <source>1.8</source>
         <target>1.8</target>
         <encoding>UTF-8</encoding>
+        <port>9000</port>
+        <tempWebappDirectory>${basedir}/target/site/tempdir</tempWebappDirectory>
       </configuration>
     </plugin>
+    <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
   </plugins>
 </build>
   
   
 	<dependencies>
+	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-site-plugin -->
+	<dependency>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-site-plugin</artifactId>
+	    <version>3.8.2</version>
+	</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
