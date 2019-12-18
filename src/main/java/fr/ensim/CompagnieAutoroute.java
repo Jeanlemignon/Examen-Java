@@ -46,7 +46,7 @@ public class CompagnieAutoroute {
 		for(Tarif t : tarifs) {
 			
 			if(t.getEntree().equals(entree) && t.getSortie().equals(sortie)) 
-				tarif= t;
+				tarif= getTarifExacte(entree, sortie);
 			else
 				tarif = getTarifCalcule(entree, sortie);
 		}
